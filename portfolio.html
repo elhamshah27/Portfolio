@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elham Shah - Software Developer</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ============================================
+         BACKGROUND EFFECTS
+         ============================================ -->
+    <div class="gradient-mesh"></div>
+    <div class="glow-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    <div class="shimmer-particles">
+        <div class="shimmer-particle shimmer-1"></div>
+        <div class="shimmer-particle shimmer-2"></div>
+        <div class="shimmer-particle shimmer-3"></div>
+    </div>
+    <canvas id="particles-bg"></canvas>
+    
+    <!-- ============================================
+         LOADING SCREEN
+         ============================================ -->
+    <div class="loader" id="loader">
+        <div class="loader-text">Initializing...</div>
+    </div>
+
+    <!-- ============================================
+         THEME TOGGLE BUTTON
+         ============================================ -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- ============================================
+         CUSTOM CURSOR
+         ============================================ -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav id="navbar">
+        <div class="nav-container" style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; position: relative;">
+            <!-- Logo -->
+            <a href="#home" class="logo-link" id="logoLink" style="position: absolute; left: 10px; display: flex; align-items: center; text-decoration: none;">
+                <img src="assets/logo.png" alt="Elham Shah" class="logo" id="logo" style="height: 90px; width: auto; display: block;">
+            </a>
+            
+            <!-- Nav Links (centered) -->
+            <ul style="display: flex; list-style: none; margin: 0 auto; padding: 1.5rem 0; flex-wrap: wrap; justify-content: center; width: 100%;">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#leadership" class="nav-link">Leadership</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         SOCIAL LINKS SIDEBAR
+         ============================================ -->
+    <div class="social-links">
+        <a href="https://github.com/elhamshah27" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/elhamshah" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:elhamshah27@yahoo.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <div class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Elham Shah</h1>
+            <p class="subtitle">Computer Science Student at UMass Boston</p>
+            <div class="typing-container">
+                <span class="typing-text" id="typing"></span>
+            </div>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">
+    <i class="fas fa-file-download"></i>
+    Download Resume
+</a>
+</div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section id="about">
+        <div class="section-header">
+            <div class="section-number">01.</div>
+            <h2>About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">    
+                <p>Hello! I'm <strong>Elham Shah</strong>, a passionate Computer Science student at UMass Boston with a deep interest in <strong>AI-driven technologies</strong> and <strong>software development</strong>.</p>
+                
+                <p>Currently working as a <strong>Researcher & Developer Intern</strong> at Noble Quran App, I specialize in developing iOS applications with NLP solutions and creating responsive web applications. My journey in tech has been driven by curiosity and a desire to build meaningful solutions.</p>
+                
+                <p>Through my experiences at <strong>Headstarter</strong> and various personal projects, I've developed a strong foundation in full-stack development, mobile applications, and machine learning. I love tackling complex problems and turning ideas into elegant, efficient solutions.</p>
+                
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or leading initiatives in campus organizations.</p>
+            </div>
+            <div class="about-image">
+                <div class="profile-card">
+                    <div class="profile-pic">👩‍💻</div>
+                    <div class="profile-info">
+                        <h3>Elham Shah</h3>
+                        <p>Software Developer</p>
+                        <p>AI Researcher</p>
+                        <p>Tech Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACHIEVEMENTS SECTION
+         ============================================ -->
+    <section id="achievements" style="padding: 3rem 2rem; background: var(--bg-secondary); border-radius: 20px; margin: 2rem auto;">
+        <div class="achievements-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+            <div class="achievement-item">
+                <div class="achievement-number" data-target="5" style="font-size: 3rem; font-weight: bold; color: #64ffda;">0</div>
+                <div class="achievement-label" style="color: var(--text-secondary); margin-top: 0.5rem;">AI Apps Built</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-number" data-target="98" style="font-size: 3rem; font-weight: bold; color: #64ffda;">0</div>
+                <div class="achievement-label" style="color: var(--text-secondary); margin-top: 0.5rem;">% Accuracy</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-number" data-target="1000" data-suffix="+" style="font-size: 3rem; font-weight: bold; color: #64ffda;">0</div>
+                <div class="achievement-label" style="color: var(--text-secondary); margin-top: 0.5rem;">Users Reached</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-number" data-target="4" style="font-size: 3rem; font-weight: bold; color: #64ffda;">0</div>
+                <div class="achievement-label" style="color: var(--text-secondary); margin-top: 0.5rem;">Star Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+         ============================================ -->
+    <section id="skills">
+        <div class="section-header">
+            <div class="section-number">02.</div>
+            <h2>Technical Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <!-- Languages -->
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-python"></i></div>
+                        <span class="skill-name">Python</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 90%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-java"></i></div>
+                        <span class="skill-name">Java</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 85%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-code"></i></div>
+                        <span class="skill-name">C</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 70%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-code"></i></div>
+                        <span class="skill-name">C++</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 70%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-js-square"></i></div>
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 80%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-html5"></i></div>
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 90%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-database"></i></div>
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 75%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fab fa-swift"></i></div>
+                        <span class="skill-name">Swift</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 65%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks & Libraries -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frameworks & Libraries</h3>
+                <div class="skill-items">
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-react"></i></div>
+                        <span class="skill-name">React</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 85%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-node-js"></i></div>
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 80%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-server"></i></div>
+                        <span class="skill-name">Express</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 75%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-leaf"></i></div>
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 75%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fas fa-arrow-right"></i></div>
+                        <span class="skill-name">Next.js</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 80%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-robot"></i></div>
+                        <span class="skill-name">OpenAI</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 70%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-vector-square"></i></div>
+                        <span class="skill-name">Pinecone</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 65%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer Tools -->
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item" title="Expert">
+                        <div class="skill-logo"><i class="fas fa-code-branch"></i></div>
+                        <span class="skill-name">VS Code</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 95%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-github"></i></div>
+                        <span class="skill-name">Git/GitHub</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 85%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fab fa-android"></i></div>
+                        <span class="skill-name">Android Studio</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 70%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fab fa-google"></i></div>
+                        <span class="skill-name">Google Cloud</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 65%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Advanced">
+                        <div class="skill-logo"><i class="fab fa-linux"></i></div>
+                        <span class="skill-name">Linux</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 80%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" title="Intermediate">
+                        <div class="skill-logo"><i class="fas fa-sync-alt"></i></div>
+                        <span class="skill-name">Agile/Scrum</span>
+                        <div class="skill-level" style="width: 40px; height: 4px; background: var(--bg-secondary); border-radius: 2px; margin-top: 5px;">
+                            <div style="width: 75%; height: 100%; background: var(--accent); border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EXPERIENCE SECTION
+         ============================================ -->
+    <section id="experience">
+        <div class="section-header">
+            <div class="section-number">03.</div>
+            <h2>Experience</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="experience-card">
+                    <h3>Researcher & Developer Intern</h3>
+                    <div class="company">Noble Quran App</div>
+                    <div class="date">Feb 2025 - Present | Boston, MA</div>
+                    <ul>
+                        <li>Conduct research on AI-driven Quranic features using NLP and machine learning</li>
+                        <li>Develop iOS UI components and optimize app performance for accessibility and responsiveness</li>
+                        <li>Collaborate with cross-functional teams to improve user experience and scalability</li>
+                        <li>Participate in Agile sprints and assist with testing and performance enhancements</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="experience-card">
+                    <h3>Software Engineering Fellow</h3>
+                    <div class="company">Headstarter</div>
+                    <div class="date">Jul 2024 - August 2024 | Remote</div>
+                    <ul>
+                        <li>Built 5+ AI apps and APIs using Next.js, OpenAI, Pinecone, and StripeAPI achieving 98% accuracy and 1,000+ users</li>
+                        <li>Developed projects from design to deployment, leading a team of 4 engineering fellows using MVC design patterns</li>
+                        <li>Coached by engineers from Amazon, Bloomberg, and Capital One on Agile, CI/CD, Git, and microservice architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION
+         ============================================ -->
+    <section id="projects">
+        <div class="section-header">
+            <div class="section-number">04.</div>
+            <h2>Featured Projects</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Portfolio Website -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/logo.png" alt="Portfolio Logo" style="width: auto; height: auto; max-width: 80%; max-height: 80%;">
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Personal Portfolio Website</h3>
+                    </div>
+                    <div class="project-date">October 2025</div>
+                    <ul>
+                        <li>Built a modern, responsive developer portfolio inspired by professional UI/UX design practices</li>
+                        <li>Implemented smooth scroll animations, dynamic project sections, and responsive navigation</li>
+                        <li>Optimized layout and performance for desktop and mobile using Flexbox and media queries</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 1.5rem;">
+                        <a href="https://github.com/elhamshah27" target="_blank" title="View Code"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noble Quran App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="noblequranapp.webp" alt="Noble Quran App" style="width: auto; height: auto; max-width: 80%; max-height: 80%;">
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Noble Quran App</h3>
+                    </div>
+                    <div class="project-date">February 2025</div>
+                    <ul>
+                        <li>Published iOS app for reading and navigating the Noble Quran</li>
+                        <li>Includes search, bookmarking, and fast navigation to chapters and verses</li>
+                        <li>Available on the App Store (link below)</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">iOS</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">Core ML</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 1.5rem;">
+                        <a href="https://apps.apple.com/us/app/noblequranapp/id6476165061" target="_blank" rel="noopener noreferrer" title="View on the App Store"><i class="fab fa-apple"></i> App Store</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fitness WebApp -->
+            <div class="project-card">
+                <div class="project-image">💪</div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>Fitness WebApp</h3>
+                    </div>
+                    <div class="project-date">January 2024</div>
+                    <ul>
+                        <li>Built a responsive web application for workout tracking and data visualization</li>
+                        <li>Developed RESTful APIs and integrated authentication and user management</li>
+                        <li>Deployed application ensuring cross-browser compatibility and database reliability</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links" style="margin-top: 1.5rem;">
+                        <a href="https://github.com/elhamshah27" target="_blank" title="View Code"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EDUCATION SECTION
+         ============================================ -->
+    <section id="education">
+        <div class="section-header">
+            <div class="section-number">05.</div>
+            <h2>Education</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="education-card">
+            <div class="education-header">
+                <h3>University of Massachusetts Boston</h3>
+                <h4>Bachelor of Science in Computer Science</h4>
+                <div class="date">September 2023 – May 2027 | Boston, MA</div>
+            </div>
+            
+            <div class="coursework-container">
+                <h4>Relevant Coursework</h4>
+                <div class="coursework-grid">
+                    <div class="course-item">Data Structures</div>
+                    <div class="course-item">Intermediate Computing</div>
+                    <div class="course-item">Discrete Mathematics</div>
+                    <div class="course-item">Computer Graphics</div>
+                    <div class="course-item">Linear Algebra</div>
+                    <div class="course-item">Programming in C</div>
+                    <div class="course-item">Operating Systems</div>
+                    <div class="course-item">Computer Architecture</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         LEADERSHIP SECTION
+         ============================================ -->
+    <div class="leadership-grid">
+    <div class="leadership-card">
+        <h3>MSA</h3>
+        <h4>Event Coordinator</h4>
+        <div class="date">Spring 2025 – Present</div>
+        <p>Organize and coordinate campus events, manage logistics, and support community-building initiatives for Muslim students</p>
+    </div>
+    <div class="leadership-card">
+        <h3>Watan Club</h3>
+        <h4>Treasurer</h4>
+        <div class="date">Spring 2025 – Present</div>
+        <p>Managing club finances and budgeting for events and activities. Working with team members to ensure financial sustainability and growth of the organization.</p>
+    </div>
+    <div class="leadership-card">
+        <h3>Afghan Student Association</h3>
+        <h4>Ambassador</h4>
+        <div class="date">Spring 2025 – Present</div>
+        <p>Represent the Afghan student community at campus events, promote cultural awareness, and support outreach, engagement, and collaboration efforts.</p>
+    </div>
+</div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section id="contact">
+        <div class="section-header">
+            <div class="section-number">07.</div>
+            <h2>Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
+                I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!
+            </p>
+            
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm" style="max-width: 600px; margin: 0 auto 3rem;">
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="name" style="display: block; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 500;">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe" style="width: 100%; padding: 0.875rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 1rem; transition: all 0.3s;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 500;">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="john.doe@example.com" style="width: 100%; padding: 0.875rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 1rem; transition: all 0.3s;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <label for="message" style="display: block; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 500;">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Hi Elham, I'd like to discuss..." style="width: 100%; padding: 0.875rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 1rem; resize: vertical; min-height: 120px; transition: all 0.3s;"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" style="width: 100%; padding: 1rem 2rem; background: transparent; color: #64ffda; border: 2px solid #64ffda; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; position: relative; overflow: hidden;">
+                    <span style="position: relative; z-index: 1;">Send Message</span>
+                </button>
+            </form>
+            
+            <!-- Social Links -->
+            <div class="contact-social" style="text-align: center; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Or connect with me on:</p>
+                <div class="social-links-contact" style="display: flex; justify-content: center; gap: 2rem;">
+                    <a href="https://github.com/elhamshah27" target="_blank" class="social-link-item" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-secondary); text-decoration: none; transition: all 0.3s;">
+                        <i class="fab fa-github" style="font-size: 1.3rem;"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/elhamshah" target="_blank" class="social-link-item" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-secondary); text-decoration: none; transition: all 0.3s;">
+                        <i class="fab fa-linkedin" style="font-size: 1.3rem;"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <p>Designed & Built by <a href="#" class="footer-link">Elham Shah</a></p>
+        <p>&copy; 2025 All rights reserved.</p>
+    </footer>
+
+    <!-- ============================================
+         MAIN JAVASCRIPT
+         ============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
