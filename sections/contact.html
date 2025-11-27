@@ -1,0 +1,77 @@
+<!-- Contact Section -->
+<section id="contact">
+    <div class="section-header">
+        <div class="section-number">07.</div>
+        <h2>Get In Touch</h2>
+        <div class="section-line"></div>
+    </div>
+    <div class="contact-content">
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
+            I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out!
+        </p>
+        
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" style="max-width: 600px; margin: 0 auto 3rem;">
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="name" style="display: block; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 500;">
+                    Your Name
+                </label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required
+                    placeholder="John Doe"
+                    style="width: 100%; padding: 0.875rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 1rem; transition: all 0.3s;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="email" style="display: block; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 500;">
+                    Your Email
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                    placeholder="john.doe@example.com"
+                    style="width: 100%; padding: 0.875rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 1rem; transition: all 0.3s;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 2rem;">
+                <label for="message" style="display: block; color: var(--text-primary); margin-bottom: 0.5rem; font-weight: 500;">
+                    Your Message
+                </label>
+                <textarea id="message" name="message" rows="5" required placeholder="Hi Elham, I'd like to discuss..." style="width: 100%; padding: 0.875rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 1rem; resize: vertical; min-height: 120px; transition: all 0.3s;"></textarea>
+            </div>
+            
+            <button 
+                type="submit" 
+                class="submit-btn"
+                style="width: 100%; padding: 1rem 2rem; background: transparent; color: #64ffda; border: 2px solid #64ffda; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; position: relative; overflow: hidden;">
+                <span style="position: relative; z-index: 1;">Send Message</span>
+            </button>
+        </form>
+        
+        <!-- Social Links -->
+        <div class="contact-social" style="text-align: center; padding-top: 2rem; border-top: 1px solid var(--border);">
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Or connect with me on:</p>
+            <div class="social-links-contact" style="display: flex; justify-content: center; gap: 2rem;">
+                <a href="https://github.com/elhamshah27" 
+                   target="_blank" 
+                   class="social-link-item"
+                   style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-secondary); text-decoration: none; transition: all 0.3s;">
+                    <i class="fab fa-github" style="font-size: 1.3rem;"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/elhamshah" 
+                   target="_blank" 
+                   class="social-link-item"
+                   style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-secondary); text-decoration: none; transition: all 0.3s;">
+                    <i class="fab fa-linkedin" style="font-size: 1.3rem;"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
